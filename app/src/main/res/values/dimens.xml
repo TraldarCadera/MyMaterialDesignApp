@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="constraint_padding">10dp</dimen>
+    <dimen name="zero_dimens">0dp</dimen>
+    <dimen name="bottom_sheet_padding">50dp</dimen>
+    <dimen name="dimens_25">25dp</dimen>
+    <dimen name="dimens_1">1dp</dimen>
+    <dimen name="dimens_5">5dp</dimen>
+    <dimen name="dimens_10">10dp</dimen>
+    <dimen name="dimens_8">8dp</dimen>
+    <dimen name="chips_dimens">16dp</dimen>
+    <dimen name="chips_text_size">18sp</dimen>
+    <dimen name="chips_spacing">25dp</dimen>
+    <dimen name="chips_margin_top">24dp</dimen>
+</resources>
