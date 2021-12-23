@@ -8,10 +8,11 @@
         <entry key="..\:/Users/markin/AndroidStudioProjects/MyMaterialDesignApp/app/src/main/res/drawable/ic_load_error_vector.xml" value="0.2703125" />
         <entry key="..\:/Users/markin/AndroidStudioProjects/MyMaterialDesignApp/app/src/main/res/drawable/ic_no_photo_vector.xml" value="0.14635416666666667" />
         <entry key="..\:/Users/markin/AndroidStudioProjects/MyMaterialDesignApp/app/src/main/res/layout/activity_main.xml" value="0.12360688956433637" />
-        <entry key="..\:/Users/markin/AndroidStudioProjects/MyMaterialDesignApp/app/src/main/res/layout/bottom_navigation_layout.xml" value="0.4886211512717537" />
-        <entry key="..\:/Users/markin/AndroidStudioProjects/MyMaterialDesignApp/app/src/main/res/layout/bottom_sheet_layout.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/markin/AndroidStudioProjects/MyMaterialDesignApp/app/src/main/res/layout/bottom_navigation_layout.xml" value="0.264" />
+        <entry key="..\:/Users/markin/AndroidStudioProjects/MyMaterialDesignApp/app/src/main/res/layout/bottom_sheet_layout.xml" value="0.264" />
         <entry key="..\:/Users/markin/AndroidStudioProjects/MyMaterialDesignApp/app/src/main/res/layout/fragment_chips.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/markin/AndroidStudioProjects/MyMaterialDesignApp/app/src/main/res/layout/fragment_main.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/markin/AndroidStudioProjects/MyMaterialDesignApp/app/src/main/res/layout/fragment_settings.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/markin/AndroidStudioProjects/MyMaterialDesignApp/app/src/main/res/menu/menu_bottom_bar_other_screen.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/markin/AndroidStudioProjects/MyMaterialDesignApp/app/src/main/res/menu/menu_bottom_navigation.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/markin/AndroidStudioProjects/MyMaterialDesignApp/app/src/main/res/menu/menu_buttom_bar.xml" value="0.25416666666666665" />

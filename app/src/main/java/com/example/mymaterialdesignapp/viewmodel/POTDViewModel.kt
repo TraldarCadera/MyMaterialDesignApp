@@ -30,7 +30,6 @@ class POTDViewModel(
         override fun onFailure(call: Call<POTDResponseData>, t: Throwable) {
             // TODO("Поймать ошибку")
         }
-
     }
 
     fun getData(): LiveData<POTDState> {
@@ -46,6 +45,4 @@ class POTDViewModel(
             retrofitImpl.getRetrofitImplementation().getPicture(apiKey).enqueue(callback)
         }
     }
-
-
 }

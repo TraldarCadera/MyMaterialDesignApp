@@ -12,4 +12,7 @@
     <dimen name="chips_text_size">18sp</dimen>
     <dimen name="chips_spacing">25dp</dimen>
     <dimen name="chips_margin_top">24dp</dimen>
+    <dimen name="margin_20">20dp</dimen>
+    <dimen name="text_size_header">20sp</dimen>
+    <dimen name="description_text_size">15sp</dimen>
 </resources>

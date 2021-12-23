@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/bottom_sheet_container"
-    android:paddingTop="@dimen/bottom_sheet_padding"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/bottom_sheet_background"
+    android:paddingTop="@dimen/bottom_sheet_padding"
+    android:theme="@style/CustomAppStyle"
     app:behavior_hideable="true"
     app:behavior_peekHeight="@dimen/bottom_sheet_padding"
     app:layout_behavior="com.google.android.material.bottomsheet.BottomSheetBehavior">
@@ -26,24 +26,31 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="@dimen/dimens_5"
+        android:fontFamily="@font/arbutus"
         android:paddingStart="@dimen/dimens_10"
         android:paddingEnd="@dimen/dimens_10"
-        android:textColor="@color/bottom_sheet_textview_text"
-        android:textStyle="bold"
+        android:text="@string/title"
+        android:textSize="@dimen/text_size_header"
+        android:textStyle="italic"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/bottom_sheet_line"
-        tools:text="Two Clusters and a Comet" />
+        app:layout_constraintTop_toBottomOf="@+id/bottom_sheet_line" />
 
     <TextView
         android:id="@+id/bottom_sheet_description"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/dimens_10"
+        android:layout_marginTop="@dimen/margin_20"
+        android:fontFamily="casual"
         android:paddingStart="@dimen/dimens_10"
         android:paddingEnd="@dimen/dimens_10"
+        android:text="@string/bottom_sheet_description_text"
+        android:textColor="?textColorConnected"
+        android:textSize="@dimen/description_text_size"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/bottom_sheet_description_header"
-        tools:text="@string/bottom_sheet_description_text" />
+        app:layout_constraintTop_toBottomOf="@+id/bottom_sheet_description_header" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

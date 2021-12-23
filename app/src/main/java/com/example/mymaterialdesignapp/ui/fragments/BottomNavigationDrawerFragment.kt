@@ -33,7 +33,6 @@ class BottomNavigationDrawerFragment : BottomSheetDialogFragment() {
                 R.id.navigation_two -> {
                     Toast.makeText(context, "Тык два", Toast.LENGTH_SHORT).show()
                 }
-
             }
             true
         }
@@ -43,5 +42,4 @@ class BottomNavigationDrawerFragment : BottomSheetDialogFragment() {
         super.onDestroy()
         _binding = null
     }
-
 }
