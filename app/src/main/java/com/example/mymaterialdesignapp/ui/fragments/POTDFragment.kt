@@ -5,17 +5,13 @@ import android.net.Uri
 import android.os.Bundle
 import android.view.*
 import android.widget.Toast
-import androidx.constraintlayout.widget.ConstraintLayout
 import androidx.core.content.ContextCompat
 import androidx.fragment.app.Fragment
-import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
 import coil.load
 import com.example.mymaterialdesignapp.R
 import com.example.mymaterialdesignapp.databinding.FragmentMainBinding
-import com.example.mymaterialdesignapp.repository.POTDResponseData
 import com.example.mymaterialdesignapp.ui.MainActivity
-import com.example.mymaterialdesignapp.ui.chips.ChipsFragment
 import com.example.mymaterialdesignapp.viewmodel.POTDState
 import com.example.mymaterialdesignapp.viewmodel.POTDViewModel
 import com.google.android.material.bottomappbar.BottomAppBar
@@ -32,20 +28,16 @@ class POTDFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        viewModel.getData().observe(viewLifecycleOwner, Observer { renderData(it) })
+        viewModel.getData().observe(viewLifecycleOwner, { renderData(it) })
         viewModel.sendServerRequest()
 
         binding.inputLayout.setEndIconOnClickListener {
             startActivity(Intent(Intent.ACTION_VIEW).apply {
-                data = Uri.parse("https://ru.wikipedia.org/wiki/${binding.inputEditText.text.toString()}")
+                data =
+                    Uri.parse("https://ru.wikipedia.org/wiki/${binding.inputEditText.text.toString()}")
             })
         }
-
         setBottomAppBar()
-
-        val behavior = BottomSheetBehavior.from(binding.includedBottomSheet.bottomSheetContainer)
-        behavior.state = BottomSheetBehavior.STATE_HALF_EXPANDED
-
     }
 
     override fun onCreateView(
@@ -69,9 +61,9 @@ class POTDFragment : Fragment() {
             R.id.app_bar_setting -> requireActivity()
                 .supportFragmentManager
                 .beginTransaction()
-                .replace(R.id.container,ChipsFragment.newInstance())
+                .replace(R.id.container, SettingsFragment.newInstance())
                 .commit()
-            android.R.id.home -> BottomNavigationDrawerFragment().show(
+            R.id.home -> BottomNavigationDrawerFragment().show(
                 requireActivity().supportFragmentManager,
                 ""
             )
@@ -115,6 +107,7 @@ class POTDFragment : Fragment() {
         val context = activity as MainActivity
         context.setSupportActionBar(binding.bottomAppBar)
         setHasOptionsMenu(true)
+        val behavior = BottomSheetBehavior.from(binding.includedBottomSheet.bottomSheetContainer)
 
         binding.fab.setOnClickListener {
             if (isMain) {
@@ -128,6 +121,8 @@ class POTDFragment : Fragment() {
                     )
                 )
                 binding.bottomAppBar.replaceMenu(R.menu.menu_bottom_bar_other_screen)
+                behavior.state = BottomSheetBehavior.STATE_EXPANDED
+
             } else {
                 isMain = true
                 binding.bottomAppBar.navigationIcon =
@@ -140,6 +135,7 @@ class POTDFragment : Fragment() {
                     )
                 )
                 binding.bottomAppBar.replaceMenu(R.menu.menu_buttom_bar)
+                behavior.state = BottomSheetBehavior.STATE_HIDDEN
             }
         }
     }
