@@ -14,4 +14,8 @@
     <color name="bottom_sheet_view_background">#663b4351</color>
     <color name="bottom_sheet_textview_text">#000</color>
     <color name="bottom_sheet_background">#f6f6fa</color>
+    <color name="colorPrimary">#212121</color>
+    <color name="colorPrimaryDark">#484848</color>
+    <color name="colorAccent">#546e7a</color>
+    <color name="background">#eeeeee</color>
 </resources>
